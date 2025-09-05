@@ -1,1 +1,21 @@
-/data.csv
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+.env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+
+# Ignore raw datasets (DVC will track them separately)
+data/raw/*
+!data/raw/*.dvc
+
+# Ignore DVC cache
+.dvc/cache/
